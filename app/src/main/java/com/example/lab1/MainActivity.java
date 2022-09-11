@@ -2,6 +2,7 @@ package com.example.lab1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -19,5 +20,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void OnButton1Click(View view) {
         this.label1.setText("Text was changed!");
+    }
+
+    public void OnButton2Click(View view) {
+        this.label1.setBackgroundColor(Color.parseColor("#d608ff"));
     }
 }
